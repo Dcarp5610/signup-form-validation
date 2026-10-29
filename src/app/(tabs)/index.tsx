@@ -162,7 +162,7 @@ export default function HomeScreen() {
         <Text style={styles.error}>{errors.confirmPassword.message}</Text>
       )}
 
-      <Pressable style={styles.button} onPress={handleSubmit(onValid)}>
+      <Pressable style={styles.button} onPress={() => handleSubmit(onValid)()}>
         <Text style={styles.buttonText}>Sign Up</Text>
       </Pressable>
     </SafeAreaView>
