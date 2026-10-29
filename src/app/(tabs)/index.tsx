@@ -81,7 +81,6 @@ export default function HomeScreen() {
             value={field.value}
             onChangeText={field.onChange}
             onBlur={field.onBlur}
-            autoCapitalize="words"
           />
         )}
       />
@@ -99,7 +98,6 @@ export default function HomeScreen() {
             value={field.value}
             onChangeText={field.onChange}
             onBlur={field.onBlur}
-            autoCapitalize="words"
           />
         )}
       />

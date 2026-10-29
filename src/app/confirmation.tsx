@@ -9,15 +9,16 @@ export default function ConfirmationScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
-        <Text style={styles.title}>Account Created Successfully!</Text>
-
-        <Text style={styles.message}>Welcome, {firstName}!</Text>
-
-        <Text style={styles.description}>
-          Your sign-up form was submitted successfully.
+        <Text style={styles.title}>
+          Form Submitted Successfully, Account Created!
         </Text>
 
-        <Pressable style={styles.button} onPress={() => router.replace("/")}>
+        <Text style={styles.message}>Thank you, {firstName}!</Text>
+
+        <Pressable
+          style={styles.button}
+          onPress={() => router.replace("/(tabs)")}
+        >
           <Text style={styles.buttonText}>Back to Sign Up</Text>
         </Pressable>
       </View>
@@ -30,22 +31,22 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     padding: 24,
+    backgroundColor: "#121212",
   },
   content: {
     alignItems: "center",
+    width: "100%",
   },
   title: {
     fontSize: 24,
     fontWeight: "bold",
     textAlign: "center",
+    color: "#ffffff",
   },
   message: {
     fontSize: 20,
     marginTop: 20,
-  },
-  description: {
-    fontSize: 16,
-    marginTop: 12,
+    color: "#ffffff",
     textAlign: "center",
   },
   button: {
